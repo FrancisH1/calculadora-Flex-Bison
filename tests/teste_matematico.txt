@@ -1,0 +1,22 @@
+// Constantes e funcoes cientificas
+let PI = 3.14159
+let e = 2.71828
+
+// Teste de Notacao Cientifica
+let n1 = 1.5e+2
+let n2 = 100.5e-1
+print(n1 + n2)
+
+// Calculos com funcoes internas
+let a = sqrt(144)
+let b = log(e)
+let c = exp(2)
+
+// Expressao de "estresse" para o parser
+let formula = (a * b + c) / (sqrt(PI) * 2) - 0.001
+print(formula)
+
+// Atribuicao e comparacao em uma linha
+let check = (a = 10) == 10
+print(a)
+print(check)

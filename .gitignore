@@ -1,0 +1,15 @@
+# Executáveis e objetos
+bison-calc
+*.o
+
+# Arquivos gerados pelo Flex/Bison
+src/lex.yy.c
+src/bison-calc.tab.c
+src/bison-calc.tab.h
+
+# Editor e sistema
+.vscode/
+.idea/
+*~
+.DS_Store
+Thumbs.db

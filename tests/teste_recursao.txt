@@ -1,0 +1,10 @@
+// Definicao de Fatorial Recursivo
+let fat(n) = if n <= 1 then 1; else n * fat(n-1);
+
+// Teste de chamadas
+print(fat(5))
+print(fat(10))
+
+// Expressao complexa com a funcao
+let resultado = fat(5) + (fat(3) * 2) / 10
+print(resultado)

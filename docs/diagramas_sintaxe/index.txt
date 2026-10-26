@@ -1,0 +1,20 @@
+calclist ::= (calclist ( stmt EOL | LET NAME '(' symlist ')' '=' list EOL | 'error' EOL ))*
+
+stmt     ::= 'IF' exp 'THEN' list ( 'ELSE' list )?
+           | 'WHILE' exp 'DO' list
+           | 'FOR' '(' exp ';' exp ';' exp ')' list
+           | exp
+
+list     ::= ( stmt ';' )*
+
+exp      ::= exp ( CMP | '+' | '-' | 'AND' | 'OR' ) exp
+           | NAME '=' exp
+           | '(' exp ')'
+           | NUMBER
+           | NAME
+           | FUNC '(' explist ')'
+           | NAME '(' explist ')'
+
+explist  ::= exp ( ',' exp )*
+
+symlist  ::= NAME ( ',' NAME )*

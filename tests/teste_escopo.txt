@@ -1,0 +1,23 @@
+// Atribuicao em cadeia (a recebe o valor de (b = 15))
+let a = 0
+let b = 0
+a = b = 10 + 5
+print(a)
+print(b)
+
+// Teste de escopo e persistencia no FOR
+let total = 1
+for(i = 1; i <= 5; i = i + 1) {
+    total = total * i;
+    print(total);
+}
+
+// Reuso de variavel apos o loop
+print(i) 
+
+// Funcao definida pelo usuario usando variaveis globais
+let k = 2
+let mult_k(x) = x * k
+print(mult_k(10))
+k = 5
+print(mult_k(10)) // Deve refletir a mudanca de k para 5
